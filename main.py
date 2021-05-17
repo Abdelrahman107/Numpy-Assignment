@@ -8,6 +8,7 @@ def randomization(n):
       A - a randomly-generated nx1 Numpy array.
     """
     A = np.random.randint(low=10, high=90, size=(n,1))# works with v1.19
+    #A = np.random.random([n,1])   # This is also applicable for float numbers generation
     return A
 
     
@@ -26,8 +27,12 @@ def operations(h, w):
       B - a randomly-generated h x w Numpy array.
       s - the sum of A and B.
     """
-    A = np.random.randint(low=10, high=90, size=(h,w))
+    A = np.random.randint(low=10, high=90, size=(h,w)) 
+    #A = np.random.random([h,w])
+    
     B = np.random.randint(low=10, high=90, size=(h,w))
+    #B = np.random.random([h,w])
+    
     s = A + B
     return A,B,s
 
